@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import NavBar from '@/components/NavBar'
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+    <NavBar/>
       <div className={styles.center}>
         <Image
           className={styles.logo}
