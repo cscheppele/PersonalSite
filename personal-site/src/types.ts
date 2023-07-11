@@ -1,0 +1,1 @@
+export type PageComponent = "Hero" | "About" | "Politics" | "Hobbies" | "PersonalProjects" | "ProfessionalHistory"
