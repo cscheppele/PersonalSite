@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .button {
+    margin-left: 5vw;
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid hotpink;
+  }
+  
+  .button:hover{
+    box-shadow:0px 0px 5px 5px hotpink;
+    cursor: pointer;
+  
+  }
+  
+  .button_top {
+    background-color: lime;
+    margin-bottom: 20vw;
+  }
+  
+  .button_bottom {
+    background-color: aqua;
+    margin-top: 20vw;
+  }
