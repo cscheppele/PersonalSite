@@ -14,7 +14,7 @@ export default function Hobbies ({setSelectedComponent}:{setSelectedComponent: D
             <div className={`${styles.hobby}`}><h2>Video Games</h2></div>
             <div className={`${styles.hobby} ${styles.hobby2}`}><h2>Working Out</h2></div>
         </div>
-        <div className={styles.hobby_row}>
+        <div className={`${styles.hobby_row} ${styles.last_row}`}>
          <div className={`${styles.hobby}`}><h2>HorseBack Riding</h2></div>
          <div className={`${styles.hobby}`}><h2>Weekend Trips</h2></div>
         </div>

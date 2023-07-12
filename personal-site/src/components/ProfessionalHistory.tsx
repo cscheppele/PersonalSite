@@ -15,14 +15,15 @@ export default function ProfessionalHistory ({setSelectedComponent}:{setSelected
             <div className={styles.professional_section}>CODING LANGUAGES</div>
             <div className={styles.professional_section}>SKILLS</div>
         </div>
-        Want to hire me and need somthing for your files? Check out my CV
-
+        <div className={styles.hire_me}>
+            Want to hire me and need somthing for your files? Check out my CV
+        </div>
         <div className={styles.navbar}>
         <h1 className={styles.navigate}>Navigate</h1>
             <div className={styles.button_container}>
                 <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("PersonalProjects")}>Personal Projects</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("ProfessionalHistory")}>Professional History</button>
+                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
+                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
                 <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
             </div>

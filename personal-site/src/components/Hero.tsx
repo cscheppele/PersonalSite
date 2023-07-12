@@ -16,18 +16,22 @@ export default function Hero ({setSelectedComponent}:{setSelectedComponent: Disp
                 <span className={`${styles.descriptor} ${styles.text}`}>DnD Afficionado</span>
                 <div className={styles.underline}></div>
             </div>
+            _
             <div className={styles.descriptor_box}>
                 <span className={`${styles.descriptor} ${styles.text}`}>Animal Trainer</span>
                 <div className={styles.underline}></div>
             </div>
+            _
             <div className={styles.descriptor_box}>
                 <span className={`${styles.descriptor} ${styles.text}`}>Full Stack Developer</span>
                 <div className={styles.underline}></div>
             </div>
+            _
             <div className={styles.descriptor_box}>
                 <span className={`${styles.descriptor} ${styles.text}`}>Would-be Volleyball Pro</span>
                 <div className={styles.underline}></div>
             </div>
+            _
             <div className={styles.descriptor_box}>
                 <span className={`${styles.descriptor} ${styles.text}`}>Gaymer</span>
                 <div className={styles.underline}></div>
