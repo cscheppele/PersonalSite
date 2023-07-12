@@ -5,12 +5,16 @@ import { PageComponent } from '@/types'
 export default function ProfessionalHistory ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
     return (
       <div className={styles.main}>
-        <div className={styles.professional_section}>EDUCATION</div>
-        <div className={styles.professional_section}>WORK HISTORY</div>
-        <div className={styles.professional_section}>KNOWN TECH</div>
-        <div className={styles.professional_section}>SPOKEN LANGUAGES</div>
-        <div className={styles.professional_section}>CODING LANGUAGES</div>
-        <div className={styles.professional_section}>SKILLS</div>
+        <div className={styles.row}>
+            <div className={styles.professional_section}>EDUCATION</div>
+            <div className={styles.professional_section}>WORK HISTORY</div>
+            <div className={styles.professional_section}>KNOWN TECH</div>
+        </div>
+            <div className={styles.row}>
+            <div className={styles.professional_section}>SPOKEN LANGUAGES</div>
+            <div className={styles.professional_section}>CODING LANGUAGES</div>
+            <div className={styles.professional_section}>SKILLS</div>
+        </div>
         Want to hire me and need somthing for your files? Check out my CV
 
         <div className={styles.navbar}>
