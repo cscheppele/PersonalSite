@@ -9,14 +9,10 @@ import ProfessionalHistory from '@/components/ProfessionalHistory';
 import { PageComponent } from '@/types';
 import { useState } from 'react';
 import { MouseEvent } from 'react';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   const [selectedComponent, setSelectedComponent] = useState<PageComponent>("Hero")
-  
-  // function handleClick (event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>): void {
-  //   console.log((event.target as any).value, (event.target as any).name)
-  //   setSelectedComponent((event.target as any).name)
-  // }
   
   const visibleComponent = (selectedComponent === "Hero" ? <Hero setSelectedComponent={setSelectedComponent}/> 
     : selectedComponent === "About" ? <About setSelectedComponent={setSelectedComponent}/> 
@@ -24,10 +20,13 @@ export default function Home() {
     : selectedComponent === "PersonalProjects" ? <PersonalProjects setSelectedComponent={setSelectedComponent}/>
     : selectedComponent === "Politics" ? <Politics setSelectedComponent={setSelectedComponent}/>
     : selectedComponent === "ProfessionalHistory" ? <ProfessionalHistory setSelectedComponent={setSelectedComponent}/>
+    : selectedComponent === "Contact" ? <Contact setSelectedComponent={setSelectedComponent}/>
     : "Cannot find Component")
   
   return (
-      <>{visibleComponent}</>
+      <main className={styles.main}>
+        {visibleComponent}
+        </main>
     
   )
 }

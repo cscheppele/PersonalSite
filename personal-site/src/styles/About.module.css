@@ -5,12 +5,16 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 100vh;
+    height: 80vh;
+    overflow-y: scroll;
 }
 
 .story {
     color: white;
     width: 95vw;;
+    white-space: pre-wrap;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .navbar {
