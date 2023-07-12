@@ -45,13 +45,12 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: radial-gradient(
+      circle,
       transparent,
       black
     )
-    rgb(39, 39, 39);
+    rgb(41, 0, 39);
 }
 
 a {

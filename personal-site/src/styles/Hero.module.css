@@ -1,10 +1,6 @@
 .main {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* padding: 6rem; */
     min-height: 100vh;
   }
   
@@ -17,6 +13,7 @@
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid hotpink;
+    box-shadow: 0px 0px 20px 5px hotpink;
   }
   
   .button {
@@ -24,21 +21,24 @@
     height:100px;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid hotpink;
   }
   
   .button:hover{
-    box-shadow:0px 0px 5px 5px hotpink;
+    box-shadow:0px 0px 20px 5px hotpink;
     cursor: pointer;
-  
   }
   
   .button_top {
     background-color: lime;
+    box-shadow: 0px 0px 20px 5px lime;
     margin-bottom: 20vw;
+    border: 2px solid lime;
+
   }
   
   .button_bottom {
     background-color: aqua;
+    box-shadow: 0px 0px 20px 5px aqua;
+    border: 2px solid aqua;
     margin-top: 20vw;
   }
