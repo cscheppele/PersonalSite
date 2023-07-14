@@ -7,7 +7,7 @@ export default function About ({setSelectedComponent}:{setSelectedComponent: Dis
       <main className={styles.main}>
         <div>
             <p className={styles.story}>Here is a big blurb about my personal history, where I have lived, growing up.
-            It's a thrilling tale full of mystery and intrigue leading to the development of one fascinating protagonist.
+            It&apos;s a thrilling tale full of mystery and intrigue leading to the development of one fascinating protagonist.
             {"\n \n"}
             My history is ever changing and will continue to evolve as time does as it is want to do and marches on.
             {"\n \n"}
@@ -16,7 +16,7 @@ export default function About ({setSelectedComponent}:{setSelectedComponent: Dis
             engaging in everything: AP courses, horse showing, track, spanish club, musicals.  
             {"\n \n"}
             I attended Oklahoma State University for college.  I initially wanted to be a large animal veterinarian but it turns out you should have
-            an interest in biology for that, and while I loved animals and I was great at the biology coursework, I just didn't enjoy it.  
+            an interest in biology for that, and while I loved animals and I was great at the biology coursework, I just didn&apos;t enjoy it.  
             That led me to my studies in Psychology and Spanish.  I did my year studying abroad in Teruel, Spain studying Psychology in Spanish as well.  It was in university as well that I found my love for volleyball playing in the 
             school rec leagues.  
             {"\n \n"}
@@ -45,7 +45,7 @@ export default function About ({setSelectedComponent}:{setSelectedComponent: Dis
             friend someone was mentoring.  
             {"\n \n"}
             Since the Bootcamp I have continued to establish myself in the world of coding, rejoined volleyball rec leauges now my ankle is healed, and I am looking
-            forward to being able to travel, meet new people, design awesome games and raise and show horses again as I continue down this new path before me!"
+            forward to being able to travel, meet new people, design awesome games and raise and show horses again as I continue down this new path before me!
             </p>
         </div>
         <div className={styles.navbar}>

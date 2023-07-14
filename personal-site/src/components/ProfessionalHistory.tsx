@@ -33,7 +33,7 @@ export default function ProfessionalHistory ({setSelectedComponent}:{setSelected
                     </summary>
                     <ul>
                         <li>Worked with 6 member team, Spearheaded the Redux sub-group and mentored the entire team on the use and implementation of Redux, Redux Toolkit, and RTK Queries.</li>
-                        <li>Developed 100% of the algorithms for handling the app's expense calculations and payment suggestions.</li>
+                        <li>Developed 100% of the algorithms for handling the app&apos;s expense calculations and payment suggestions.</li>
                         <li>Assisted in backend MVC design with Express/Postgres.</li>
                         <li>Collaborated with the team on typescript implementation and introduced new features</li>
                         <li>Served as Project Manager.</li>
