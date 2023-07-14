@@ -28,6 +28,8 @@
     margin-bottom:  12vh;
 }
 
+
+
 .professional_section {
     color: black;
     background-color: rgb(244, 94, 226);
@@ -39,6 +41,7 @@
     height: 300px;
     border: 2px solid rgb(212, 1, 212);
     box-shadow: 0 0 10px 5px rgb(212, 1, 212);
+    overflow-y: scroll;
 }
 
 .button_container {

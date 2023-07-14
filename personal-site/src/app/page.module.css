@@ -2,15 +2,3 @@
   background-color: gradient ;
 }
 
-.navigate {
-  background-color: hotpink;
-  box-shadow:0px 0px 10px 1px hotpink;
-  align-self: center;
-  font-size: larger;
-  padding: 5px 1vw;
-  border-radius: 25px;
-}
-
-.navigate:hover {
-  box-shadow:0px 0px 20px 5px hotpink;
-}
