@@ -3,11 +3,13 @@
     flex-direction: column;
     align-items: center;
     color: rgb(248, 244, 0);
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 .text {
-    /* z-index: 1; */
-    /* font-size: small; */
+    z-index: 1;
+    font-size: small;
     margin: 2vh;
 }
 
@@ -17,11 +19,12 @@
 }
 
 .descriptor_container {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2em;
     width: 95vw;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     font-size: 1.5em;
 }
@@ -41,20 +44,19 @@
 }
 
 .underline {
-    position: absolute;
+    position: absolute; 
     bottom: 20px;
     height: 2px;
-    width: 91%;
+    width: 100%;
     border: 1px solid rgb(248, 244, 0);
     box-shadow: 0 0 10px 2px rgb(248, 244, 0);
 }
 
 .face {
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin: 0 3vw;
     position: relative;
-    height: 350px;
-    width: 350px;
+    height: 35vh;
+    width: 35vh;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid hotpink;
@@ -62,35 +64,21 @@
 }
 
 .nav_buttons {
-    /* position: relative; */
+    position: relative;
     top: -10vh;
-    flex-direction: column;
     display: flex;
-    /* justify-content: space-evenly; */
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
     z-index: 0;
     width: 95vw;
+    margin-right: 3vw;
 }
 
 .button:hover {
     box-shadow: 0px 0px 20px 5px hotpink;
     cursor: pointer;
-}
-
-.button_top {
-    background: radial-gradient(circle, rgb(122, 246, 122), lime);
-    box-shadow: 0px 0px 20px 5px lime;
-    margin: 0 0 0 20vw;
-    border: 2px solid lime;
-
-}
-
-.button_bottom {
-    background: radial-gradient(circle, rgb(132, 249, 249), aqua);
-    box-shadow: 0px 0px 20px 5px aqua;
-    border: 2px solid aqua;
-    margin: 0 20vw 0 0;
 }
 
 .button {
@@ -102,21 +90,16 @@
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 1150px) {
-    .main {
-        max-height: 100vh;
-    }
+.button_top {
+    background: radial-gradient(circle, rgb(122, 246, 122), lime);
+    box-shadow: 0px 0px 20px 5px lime;
+    margin-bottom: 20vh;
+    border: 2px solid lime;
+}
 
-    .name {
-        font-size: 5em;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .descriptor_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        font-size: 2em;
-    }
+.button_bottom {
+    background: radial-gradient(circle, rgb(132, 249, 249), aqua);
+    box-shadow: 0px 0px 20px 5px aqua;
+    border: 2px solid aqua;
+    margin-top: 20vh;
 }

@@ -1,1 +1,1 @@
-export type PageComponent = "Hero" | "About" | "Politics" | "Hobbies" | "PersonalProjects" | "ProfessionalHistory" | "Contact"
+export type PageComponent = "Hero" | "About" | "Politics" | "Hobbies" | "Portfolio" | "CurriculumVitae" | "Contact"

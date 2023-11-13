@@ -14,36 +14,31 @@ export default function Hero({ setSelectedComponent }: { setSelectedComponent: D
             <h1 className={`${styles.descriptor_container}`}>
                 <div className={styles.descriptor_box}>
                     <span className={`${styles.descriptor} ${styles.text}`}>DnD Afficionado</span>
-                    <div className={styles.underline}></div>
                 </div>
-                _
+                -
                 <div className={styles.descriptor_box}>
-                    <span className={`${styles.descriptor} ${styles.text}`}>Animal Trainer</span>
-                    <div className={styles.underline}></div>
+                    <span className={`${styles.descriptor} ${styles.text}`}>Quest Designer</span>
                 </div>
-                _
+                -
                 <div className={styles.descriptor_box}>
-                    <span className={`${styles.descriptor} ${styles.text}`}>Full Stack Developer</span>
-                    <div className={styles.underline}></div>
+                    <span className={`${styles.descriptor} ${styles.text}`}>Game Developer</span>
                 </div>
-                _
+                -
                 <div className={styles.descriptor_box}>
                     <span className={`${styles.descriptor} ${styles.text}`}>Would-be Volleyball Pro</span>
-                    <div className={styles.underline}></div>
                 </div>
-                _
+                -
                 <div className={styles.descriptor_box}>
                     <span className={`${styles.descriptor} ${styles.text}`}>Gaymer</span>
-                    <div className={styles.underline}></div>
                 </div>
             </h1>
             <div className={styles.nav_buttons}>
                 <div className={styles.face}>
                     <Image src={face} layout='fill' objectFit='cover' alt="profile picture" />
                 </div>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("PersonalProjects")}>Personal Projects</button>
+                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Portfolio")}>Portfolio</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("ProfessionalHistory")}>Professional History</button>
+                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
                 <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>

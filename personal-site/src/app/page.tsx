@@ -3,9 +3,9 @@ import styles from './page.module.css';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Hobbies from '@/components/Hobbies';
-import PersonalProjects from '@/components/PersonalProjects';
+import Portfolio from '@/components/Portfolio';
 import Politics from '@/components/Politics';
-import ProfessionalHistory from '@/components/ProfessionalHistory';
+import CurriculumVitae from '@/components/CurriculumVitae';
 import { PageComponent } from '@/types';
 import { useState } from 'react';
 import { MouseEvent } from 'react';
@@ -17,9 +17,9 @@ export default function Home() {
   const visibleComponent = (selectedComponent === "Hero" ? <Hero setSelectedComponent={setSelectedComponent}/> 
     : selectedComponent === "About" ? <About setSelectedComponent={setSelectedComponent}/> 
     : selectedComponent === "Hobbies" ? <Hobbies setSelectedComponent={setSelectedComponent}/>
-    : selectedComponent === "PersonalProjects" ? <PersonalProjects setSelectedComponent={setSelectedComponent}/>
+    : selectedComponent === "Portfolio" ? <Portfolio setSelectedComponent={setSelectedComponent}/>
     : selectedComponent === "Politics" ? <Politics setSelectedComponent={setSelectedComponent}/>
-    : selectedComponent === "ProfessionalHistory" ? <ProfessionalHistory setSelectedComponent={setSelectedComponent}/>
+    : selectedComponent === "CurriculumVitae" ? <CurriculumVitae setSelectedComponent={setSelectedComponent}/>
     : selectedComponent === "Contact" ? <Contact setSelectedComponent={setSelectedComponent}/>
     : "Cannot find Component")
   

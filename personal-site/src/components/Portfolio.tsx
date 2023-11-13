@@ -1,8 +1,8 @@
-import styles from "@/styles/PersonalProjects.module.css"
+import styles from "@/styles/Portfolio.module.css"
 import { Dispatch, SetStateAction } from 'react'
 import { PageComponent } from '@/types'
 
-export default function PersonalProjects ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
+export default function Portfolio ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
     return (
       <main className={styles.main}>
         <div className={styles.project_container}>
@@ -37,7 +37,7 @@ export default function PersonalProjects ({setSelectedComponent}:{setSelectedCom
             <div className={styles.button_container}>
                 <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("ProfessionalHistory")}>Professional History</button>
+                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
                 <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
                 <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>
