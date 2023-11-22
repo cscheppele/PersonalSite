@@ -48,17 +48,6 @@ export default function About ({setSelectedComponent}:{setSelectedComponent: Dis
             forward to being able to travel, meet new people, design awesome games and raise and show horses again as I continue down this new path before me!
             </p>
         </div>
-        <div className={styles.navbar}>
-        <h1 className={styles.navigate}>Navigate</h1>
-            <div className={styles.button_container}>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Portfolio")}>Portfolio</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>
-            </div>
-        </div>
       </main>
     )
 }

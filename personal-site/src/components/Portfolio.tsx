@@ -32,17 +32,6 @@ export default function Portfolio ({setSelectedComponent}:{setSelectedComponent:
                 <a href="https://github.com/cscheppele/PersonalSite">GitHub</a>
             </div>
         </div>
-        <div className={styles.navbar}>
-            <h1 className={styles.navigate}>Navigate</h1>
-            <div className={styles.button_container}>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>
-            </div>
-        </div>
       </main>
     )
 }

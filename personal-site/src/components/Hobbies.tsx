@@ -18,17 +18,6 @@ export default function Hobbies ({setSelectedComponent}:{setSelectedComponent: D
          <div className={`${styles.hobby}`}><h2>HorseBack Riding</h2></div>
          <div className={`${styles.hobby}`}><h2>Weekend Trips</h2></div>
         </div>
-        <div className={styles.navbar}>
-        <h1 className={styles.navigate}>Navigate</h1>
-            <div className={styles.button_container}>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Portfolio")}>Portfolio</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hero")}>Home</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>
-            </div>
-        </div>
       </main>
     )
 }

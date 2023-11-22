@@ -32,17 +32,6 @@ export default function Hero({ setSelectedComponent }: { setSelectedComponent: D
                     <span className={`${styles.descriptor} ${styles.text}`}>Gaymer</span>
                 </div>
             </h1>
-            <div className={styles.nav_buttons}>
-                <div className={styles.face}>
-                    <Image src={face} layout='fill' objectFit='cover' alt="profile picture" />
-                </div>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Portfolio")}>Portfolio</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Hobbies")}>Hobbies</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("CurriculumVitae")}>Curriculum Vitae</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("About")}>About</button>
-                <button className={`${styles.button} ${styles.button_bottom}`} onClick={() => setSelectedComponent("Politics")}>Political Stances</button>
-                <button className={`${styles.button} ${styles.button_top}`} onClick={() => setSelectedComponent("Contact")}>Contact</button>
-            </div>
         </main>
     )
 }
