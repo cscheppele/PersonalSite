@@ -11,7 +11,7 @@ export default function Hero({ setSelectedComponent }: { setSelectedComponent: D
                 <h1 className={`${styles.name} ${styles.text}`}>Chris Scheppele</h1>
                 <div className={styles.underline}></div>
             </div>
-            <h1 className={`${styles.descriptor_container}`}>
+            <h1 className={`${styles.descriptors_container}`}>
                 <div className={styles.descriptor_box}>
                     <span className={`${styles.descriptor} ${styles.text}`}>DnD Afficionado</span>
                 </div>
@@ -32,6 +32,7 @@ export default function Hero({ setSelectedComponent }: { setSelectedComponent: D
                     <span className={`${styles.descriptor} ${styles.text}`}>Gaymer</span>
                 </div>
             </h1>
+            <h1 className={styles.face}></h1>
         </main>
     )
 }
