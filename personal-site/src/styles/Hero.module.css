@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(248, 244, 0);
-    max-height: 100vh;
+    color: lime;
+    height: 100vh;
     max-width: 80vw;
 }
 
@@ -48,15 +48,15 @@
     bottom: 20px;
     height: 2px;
     width: 100%;
-    border: 1px solid rgb(248, 244, 0);
-    box-shadow: 0 0 10px 2px rgb(248, 244, 0);
+    border: 1px solid lime;
+    box-shadow: 0 0 10px 2px lime;
 }
 
 .face {
     margin: 0 3vw;
     position: relative;
-    height: 35vh;
-    width: 35vh;
+    height: 50vh;
+    width: 50vh;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid hotpink;

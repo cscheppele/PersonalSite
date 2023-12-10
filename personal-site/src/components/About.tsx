@@ -5,7 +5,6 @@ import { PageComponent } from '@/types'
 export default function About (/*{setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}*/) {
     return (
       <main className={styles.main}>
-        <div>
             <p className={styles.story}>Here is a big blurb about my personal history, where I have lived, growing up.
             It&apos;s a thrilling tale full of mystery and intrigue leading to the development of one fascinating protagonist.
             {"\n \n"}
@@ -47,7 +46,6 @@ export default function About (/*{setSelectedComponent}:{setSelectedComponent: D
             Since the Bootcamp I have continued to establish myself in the world of coding, rejoined volleyball rec leauges now my ankle is healed, and I am looking
             forward to being able to travel, meet new people, design awesome games and raise and show horses again as I continue down this new path before me!
             </p>
-        </div>
       </main>
     )
 }
