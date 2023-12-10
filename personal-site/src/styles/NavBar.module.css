@@ -4,6 +4,8 @@
     height: 100vh;
     width: 13vw;
     border-right: 2px solid limegreen;
+    position: fixed;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

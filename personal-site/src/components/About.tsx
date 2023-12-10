@@ -2,7 +2,7 @@ import styles from "@/styles/About.module.css"
 import { Dispatch, SetStateAction } from 'react'
 import { PageComponent } from '@/types'
 
-export default function About ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
+export default function About (/*{setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}*/) {
     return (
       <main className={styles.main}>
         <div>

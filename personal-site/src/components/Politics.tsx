@@ -2,7 +2,7 @@ import styles from "@/styles/Politics.module.css"
 import { Dispatch, SetStateAction } from 'react'
 import { PageComponent } from '@/types'
 
-export default function Politics ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
+export default function Politics (/*{setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}*/) {
     return (
       <main className={styles.main}>
         <h1>Everything should be illegal, including government</h1>

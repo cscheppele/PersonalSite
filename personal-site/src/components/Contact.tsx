@@ -2,7 +2,7 @@ import styles from "@/styles/Contact.module.css";
 import { Dispatch, SetStateAction } from 'react';
 import { PageComponent } from '@/types';
 
-export default function Contact ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
+export default function Contact (/*{setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}*/) {
     return(
         <main className={styles.main}>
             <form className={styles.form}>

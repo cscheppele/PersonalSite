@@ -6,101 +6,10 @@
     justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
+    width: 80vw;
     color: rgb(244, 94, 226);
-}
-
-.navbar {
-    position:fixed;
-    bottom:0;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.row {
-    display: flex;
-    width: 95vw;
-    justify-content: space-evenly;
 }
 
 .hire_me {
     margin-bottom:  12vh;
-}
-
-
-
-.professional_section {
-    color: black;
-    background-color: rgb(244, 94, 226);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 50px;
-    width: 350px;
-    height: 300px;
-    border: 2px solid rgb(212, 1, 212);
-    box-shadow: 0 0 10px 5px rgb(212, 1, 212);
-    overflow-y: scroll;
-}
-
-.button_container {
-    position:relative;
-    border: 2px solid hotpink;
-    box-shadow:0px 0px 5px 0px hotpink;
-    border-bottom: none;
-    padding: .5vw;
-    display: flex;
-    justify-content: center;
-    /* visibility: hidden; */
-    border-radius: 40px 40px 0px 0px;
-}
-
-.button {
-    margin: 0 2.5vw 0 2.5vw;
-    height:100px;
-    width: 100px;
-    border-radius: 50%;
-    text-decoration: underline;
-  }
-  
-.button:hover{
-    box-shadow:0px 0px 20px 5px hotpink;
-    cursor: pointer;
-}
-
-.button_top {
-    background-color: lime;
-    box-shadow: 0px 0px 20px 5px lime;
-    border: 2px solid lime;
-
-}
-
-.button_bottom {
-    background-color: aqua;
-    box-shadow: 0px 0px 20px 5px aqua;
-    border: 2px solid aqua;
-}
-
-.navigate {
-    color: black;
-    background-color: hotpink;
-    box-shadow:0px 0px 10px 1px hotpink;
-    align-self: center;
-    font-size: larger;
-    padding: 5px 1vw;
-    border-radius: 25px;
-}
-
-.navigate:hover {
-    box-shadow:0px 0px 20px 5px hotpink;
-}
-
-.navigate_clicked {
-    padding: 5px 1vw 2px 1vw;
-    border-radius: 25px 25px 0 0;
-}
-
-.button_container_clicked {
-    display:inline;
 }

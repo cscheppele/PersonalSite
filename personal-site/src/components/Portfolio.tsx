@@ -2,7 +2,7 @@ import styles from "@/styles/Portfolio.module.css"
 import { Dispatch, SetStateAction } from 'react'
 import { PageComponent } from '@/types'
 
-export default function Portfolio ({setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}) {
+export default function Portfolio (/*{setSelectedComponent}:{setSelectedComponent: Dispatch<SetStateAction<PageComponent>>}*/) {
     return (
       <main className={styles.main}>
         <div className={styles.project_container}>
