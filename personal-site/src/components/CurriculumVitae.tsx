@@ -2,7 +2,7 @@ import styles from "@/styles/CurriculumVitae.module.css";
 import { Dispatch, SetStateAction } from 'react';
 import { PageComponent } from '@/types';
 import Image from 'next/image';
-import cvPreview from '@/public//cv-preview.png'
+// import cvPreview from '@/public//cv-preview.png'
 
 
 export default function CurriculumVitae (/*{ setSelectedComponent }: { setSelectedComponent: Dispatch<SetStateAction<PageComponent>> }*/) {
@@ -20,7 +20,7 @@ export default function CurriculumVitae (/*{ setSelectedComponent }: { setSelect
                 Want to hire me and need somthing for your files? Check out my CV
             </div>
             <div onClick={handleCVClick}>
-                <Image src={cvPreview} alt="Curriculum Vitae Preview" className={styles.cv_preview} />
+                {/* <Image src={cvPreview} alt="Curriculum Vitae Preview" className={styles.cv_preview} /> */}
             </div>
         </div>
     )
