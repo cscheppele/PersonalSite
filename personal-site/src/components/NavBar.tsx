@@ -1,19 +1,20 @@
 import styles from "@/styles/NavBar.module.css"
 
-export default function NavBar () {
+export default function NavBar ({heroRef, portfolioRef, aboutRef, hobbiesRef, contactRef, politicsRef, curriculumVitaeRef}) {
+    const scrollToComponent = (ref) => {
+        if (ref && ref.current) {
+          ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
     return (
         <div className={styles.navbar}>
-            <button className={styles.button}>Home</button>
-            <button className={styles.button}>Portfolio</button>
-            <button className={styles.button}>Hobbies</button>
-            <div className={styles.descriptor_box}>
-                <h1 className={`${styles.name} ${styles.text}`}>Chris Scheppele</h1>
-                <div className={styles.underline}></div>
-            </div>
-            <button className={styles.button}>Curriculum Vitae</button>
-            <button className={styles.button}>About Me</button>
-            <button className={styles.button}>Political Stances</button>
-            <button className={styles.button}>Contact</button>
+            <button className={styles.button} onClick={() => scrollToComponent(heroRef)}>Home</button>
+            <button className={styles.button} onClick={() => scrollToComponent(aboutRef)}>About Me</button>
+            <button className={styles.button} onClick={() => scrollToComponent(portfolioRef)}>Portfolio</button>
+            <button className={styles.button} onClick={() => scrollToComponent(curriculumVitaeRef)}>Curriculum Vitae</button>
+            <button className={styles.button} onClick={() => scrollToComponent(hobbiesRef)}>Hobbies</button>
+            <button className={styles.button} onClick={() => scrollToComponent(politicsRef)}>Political Stances</button>
+            <button className={styles.button} onClick={() => scrollToComponent(contactRef)}>Contact</button>
         </div>
     )
 }

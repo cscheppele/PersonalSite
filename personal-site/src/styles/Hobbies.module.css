@@ -4,14 +4,21 @@
     justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
-    width: 80vw;
+    /* width: 80vw; */
 }
 
 .hobby_row {
-    width: 70vw;
     display: flex;
     flex-direction: row;
+}
+
+.row1 {
+    width: 70vw;
     justify-content: space-evenly;
+}
+.row2 {
+    width: 70vw;
+    justify-content: space-between;
 }
 
 .last_row {
@@ -22,7 +29,6 @@
     border-radius: 50%;
     height: 250px;
     width: 250px;
-    /* border: 2px solid black; */
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
     background: radial-gradient(
         circle,
@@ -35,12 +41,4 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.hobby1 {
-    margin-right: 15vw;
-}
-
-.hobby2 {
-    margin-left: 15vw;
 }
