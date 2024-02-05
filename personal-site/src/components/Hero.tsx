@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import face from "../../public/cropped-face.png"
 import styles from "@/styles/Hero.module.css"
-import NavBar from './NavBar'
-import { Dispatch, SetStateAction } from 'react'
-import { PageComponent } from '@/types'
 
-export default function Hero(/*{ setSelectedComponent }: { setSelectedComponent: Dispatch<SetStateAction<PageComponent>> }*/) {
+export default function Hero() {
     return (
         <main className={styles.main}>
             <div className={styles.descriptor_box}>

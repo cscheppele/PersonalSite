@@ -1,11 +1,9 @@
 import styles from "@/styles/CurriculumVitae.module.css";
-import { Dispatch, SetStateAction } from 'react';
-import { PageComponent } from '@/types';
 import Image from 'next/image';
 // import cvPreview from '@/public//cv-preview.png'
 
 
-export default function CurriculumVitae (/*{ setSelectedComponent }: { setSelectedComponent: Dispatch<SetStateAction<PageComponent>> }*/) {
+export default function CurriculumVitae () {
     //placeholder for CV data from prisma
     const cvData = null;
 

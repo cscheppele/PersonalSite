@@ -1,7 +1,8 @@
 import styles from "@/styles/NavBar.module.css"
+import { NavBarProps } from "@/types";
 
-export default function NavBar ({heroRef, portfolioRef, aboutRef, hobbiesRef, contactRef, politicsRef, curriculumVitaeRef}) {
-    const scrollToComponent = (ref) => {
+export default function NavBar ({heroRef, portfolioRef, aboutRef, hobbiesRef, contactRef, politicsRef, curriculumVitaeRef}: NavBarProps) {
+    const scrollToComponent = (ref: React.RefObject<HTMLElement>) => {
         if (ref && ref.current) {
           ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
