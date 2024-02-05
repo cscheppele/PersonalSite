@@ -52,9 +52,12 @@
     box-shadow: 0 0 10px 2px lime;
 }
 
+.hero_container {
+    height: ;
+}
+
 .face {
     margin: 0 3vw;
-    position: relative;
     height: 50vh;
     width: 50vh;
     border-radius: 50%;

@@ -1,8 +1,12 @@
 .main {
   background-color: gradient ;
+  display:flex;
+  flex-direction: column;
 }
 .Navbar {
-  width: 20vw;
+  width: 100vw;
+  position: sticky;
+  top: 0;
 }
 .scroll {
   width: 80vw;
