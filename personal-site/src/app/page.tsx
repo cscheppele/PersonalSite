@@ -6,14 +6,12 @@ import Hobbies from '@/components/Hobbies';
 import Portfolio from '@/components/Portfolio';
 import Politics from '@/components/Politics';
 import CurriculumVitae from '@/components/CurriculumVitae';
-import { PageComponent } from '@/types';
 import React, { useRef /*, useState*/} from 'react';
-import { MouseEvent } from 'react';
+// import { MouseEvent } from 'react';
 import Contact from '@/components/Contact';
 import NavBar from '@/components/NavBar';
 
 export default function Home() {
-  // const [selectedComponent, setSelectedComponent] = useState<PageComponent>("Home")
   
   const portfolioRef = useRef(null);
   const hobbiesRef = useRef(null);
@@ -35,9 +33,6 @@ export default function Home() {
           <div className={styles.component} ref={politicsRef}><Politics/></div>
           <div className={styles.component} ref={contactRef}><Contact/></div>
         </div>
-        
-
-        {/* {visibleComponent} */}
         </main>
     
   )
