@@ -5,14 +5,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
-    /* overflow-y: scroll; */
+    /* Grows with the text; the page scrolls instead of this section */
+    min-height: 80vh;
 }
 
 .story {
     color: white;
     width: inherit;
-    white-space: pre-wrap;
-    overflow: hidden;
-    overflow-y: scroll;
+}
+
+.story p {
+    margin-bottom: 1.25em;
+    line-height: 1.6;
+}
+
+.story p:last-child {
+    margin-bottom: 0;
 }
