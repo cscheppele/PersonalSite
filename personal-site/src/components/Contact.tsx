@@ -1,10 +1,12 @@
 import styles from "@/styles/Contact.module.css";
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 
 const NAME = "Chris Scheppele";
 // Stored in pieces and joined only in the browser, so the full address never
 // appears in the page's HTML for scraper bots to harvest.
 const EMAIL_PARTS = ["cmscheppele", "gmail", "com"];
+const assembleEmail = () => `${EMAIL_PARTS[0]}@${EMAIL_PARTS[1]}.${EMAIL_PARTS[2]}`;
+const noSubscribe = () => () => {};
 const GITHUB_URL = "https://github.com/cscheppele";
 // TODO: replace with your LinkedIn profile URL
 const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile";
@@ -29,12 +31,8 @@ const LinkedInIcon = () => (
 
 export default function Contact () {
     const [copied, setCopied] = useState(false);
-    const [email, setEmail] = useState("");
-
-    useEffect(() => {
-        const [user, domain, tld] = EMAIL_PARTS;
-        setEmail(`${user}@${domain}.${tld}`);
-    }, []);
+    // Server-rendered HTML gets "" (no address); the browser gets the real one.
+    const email = useSyncExternalStore(noSubscribe, assembleEmail, () => "");
 
     const copyEmail = async () => {
         if (!email) return;

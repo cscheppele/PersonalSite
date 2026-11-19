@@ -13,13 +13,13 @@ import NavBar from '@/components/NavBar';
 
 export default function Home() {
   
-  const portfolioRef = useRef(null);
-  const hobbiesRef = useRef(null);
-  const contactRef = useRef(null);
-  const curriculumVitaeRef = useRef(null);
-  const politicsRef = useRef(null);
-  const aboutRef = useRef(null);
-  const heroRef = useRef(null);
+  const portfolioRef = useRef<HTMLDivElement>(null);
+  const hobbiesRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  const curriculumVitaeRef = useRef<HTMLDivElement>(null);
+  const politicsRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
   
   return (
       <main className={styles.main}>

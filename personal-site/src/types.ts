@@ -1,13 +1,13 @@
 import React from 'react'; // Import React
 
 export interface NavBarProps {
-  heroRef: React.RefObject<HTMLElement>;
-  portfolioRef: React.RefObject<HTMLElement>;
-  aboutRef: React.RefObject<HTMLElement>;
-  hobbiesRef: React.RefObject<HTMLElement>;
-  contactRef: React.RefObject<HTMLElement>;
-  politicsRef: React.RefObject<HTMLElement>;
-  curriculumVitaeRef: React.RefObject<HTMLElement>;
+  heroRef: React.RefObject<HTMLDivElement | null>;
+  portfolioRef: React.RefObject<HTMLDivElement | null>;
+  aboutRef: React.RefObject<HTMLDivElement | null>;
+  hobbiesRef: React.RefObject<HTMLDivElement | null>;
+  contactRef: React.RefObject<HTMLDivElement | null>;
+  politicsRef: React.RefObject<HTMLDivElement | null>;
+  curriculumVitaeRef: React.RefObject<HTMLDivElement | null>;
 }
 
 // export type PageComponent = "Hero" | "About" | "Politics" | "Hobbies" | "Portfolio" | "CurriculumVitae" | "Contact"
