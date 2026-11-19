@@ -1,58 +1,116 @@
 .main {
-    font-size: larger;
-    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 80vh;
-    /* overflow-y: scroll; */
+    min-height: 80vh;
     width: 80vw;
 }
 
-.form {
+.card {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 1.25rem;
+    width: min(90%, 32rem);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: black;
     background: radial-gradient(
         circle,
         transparent,
         rgb(248, 244, 0)
       )
     rgb(248, 248, 106);
-    color: black;
     border: 2px solid black;
     border-radius: 40px;
     box-shadow: 0 0 15px 5px rgb(248, 244, 0);
-    width: 40vw;
-    height: 66vh;
 }
 
-.input {
-    width: 30vw;
-    background-color: white;
-    color: black;
-}
-
-.submit {
-    width: 15vw;
-    height: 2em;
-    background-color: rgb(212, 1, 212);
-    border-radius: 25px;
-    color: black;
-    border: 2px inset black;
-    /* box-shadow: 0 0 5px 0px rgb(212, 1, 212); */
+.eyebrow {
+    font-size: 0.85rem;
     font-weight: bold;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
 
-.submit:hover {
-    border: 2px outset black;
-    box-shadow:0px 0px 20px 5px rgb(212, 1, 212);
+.name {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.1;
+}
+
+.email_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-break: break-all;
+    border-bottom: 2px solid black;
+}
+
+.email:hover {
+    border-bottom-color: rgb(212, 1, 212);
+}
+
+.copy {
+    padding: 0.3rem 0.9rem;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 999px;
     cursor: pointer;
 }
 
-.text_area {
-    height: 15em;
-    border: 2px inset black;
+.copy:hover {
+    box-shadow: 0 0 12px 3px rgb(212, 1, 212);
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(212, 1, 212);
+    border: 2px solid black;
+    border-radius: 25px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.link:hover {
+    box-shadow: 0 0 20px 5px rgb(212, 1, 212);
+    transform: translateY(-2px);
+}
+
+.email:focus-visible,
+.copy:focus-visible,
+.link:focus-visible {
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
+
+.icon {
+    width: 1.25em;
+    height: 1.25em;
+    flex-shrink: 0;
 }
