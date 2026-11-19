@@ -8,8 +8,7 @@ const EMAIL_PARTS = ["cmscheppele", "gmail", "com"];
 const assembleEmail = () => `${EMAIL_PARTS[0]}@${EMAIL_PARTS[1]}.${EMAIL_PARTS[2]}`;
 const noSubscribe = () => () => {};
 const GITHUB_URL = "https://github.com/cscheppele";
-// TODO: replace with your LinkedIn profile URL
-const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile";
+const LINKEDIN_URL = "https://www.linkedin.com/in/cscheppele/";
 
 const MailIcon = () => (
     <svg viewBox="0 0 24 24" aria-hidden="true" className={styles.icon}>
